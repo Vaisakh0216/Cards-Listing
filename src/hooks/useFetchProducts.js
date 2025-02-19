@@ -3,7 +3,7 @@ import axios from "axios";
 
 const useFetchProducts = (apiUrl) => {
   const [result, setResult] = useState(null);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
   useEffect(() => {

@@ -14,12 +14,12 @@ const StyledDiv = styled.div`
 
 function Home() {
   const apiUrl = "https://fakestoreapi.com/products";
-  const { result: productsList, isLoading } = useFetchProducts(apiUrl);
+  const { result: productsList, loading } = useFetchProducts(apiUrl);
 
   return (
     <StyledDiv>
       {productsList?.map((product) => (
-        <Card key={product.id} products={product} isLoading={isLoading} />
+        <Card key={product.id} products={product} isLoading={loading} />
       ))}
     </StyledDiv>
   );

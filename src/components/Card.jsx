@@ -76,8 +76,6 @@ const StarRating = ({ rating }) => {
 const CardWrapper = ({ products, isLoading }) => {
   const [liked, setLiked] = useState(false); 
 
-  console.log('products',products)
-
   const handleFavoriteClick = () => {
     setLiked(!liked);
   };
